@@ -1,0 +1,54 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title>人生轨迹：我是它你我，你好</title>
+		<link rel="stylesheet" href="css/ysb2012qbn.css" type="text/css">
+	</head>
+
+	<body>
+		<div>
+			<a href="0.html">第1卷</a>
+			<a href="1.html">第2卷</a>
+			<a href="2.html">第3卷</a>
+			<a href="3.html">第4卷</a>
+			<a href="4.html">第5卷</a>
+			<a href="5.html">第6卷</a>
+			<a href="6.html">第7卷</a>
+			<a href="7.html">第8卷</a>
+			<a href="8.html">第9卷</a>
+			<a href="9.html">第10卷</a>
+			<a href="10.html">第11卷</a>
+			<a href="11.html">第12卷</a>
+			<a href="12.html">第13卷</a>
+		</div>
+		<p align="center">
+			<a onclick="syj()" class="acla">向前</a>
+			<a onclick="xyj()" class="acla">向后</a>
+		</p>
+
+		<h1>卷6《人生轨迹：我是它你我，你好》</h1>
+
+		<div>
+			<button onclick="bianda()">文字大</button>
+			<button onclick="bianxiao()">文字小</button>
+			<button onclick="moren()">默认值</button>
+			<button onclick="heiye()">黑夜读</button>
+			<button onclick="baitian()">白天读</button>
+		</div>
+		<textarea id="content" readonly="readonly">
+		</textarea>
+		
+		<script type="text/javascript" src="js/2012qbn.js"></script>
+		<script type="text/javascript">
+            xmlhttp=new XMLHttpRequest();     
+            xmlhttp.open("get","xml/5.xml",false)  
+            xmlhttp.send();  
+            xmlDoc=xmlhttp.responseText;  
+            var textarea = document.getElementById("content");
+            textarea.value += xmlDoc;
+		</script>
+	</body>
+
+</html>
